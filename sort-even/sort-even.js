@@ -11,7 +11,8 @@ function sortEvens(numArray) {
 
 }
 
-console.log("Testing sortEvens()...");
 let nums = [4, 2, 9, 1, 8];
+console.log(`numbers to sort: ${nums}`)
 let evenNums = sortEvens(nums);
+console.log("sorted even numbers:")
 console.log(evenNums);
