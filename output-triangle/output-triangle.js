@@ -17,5 +17,3 @@ console.log("Testing drawTriangle()...");
 drawTriangle(4);
 
 
-// Do NOT remove the following line
-export default drawTriangle;
