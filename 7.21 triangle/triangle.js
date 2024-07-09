@@ -10,7 +10,7 @@ function trianglePerimeter(x1, y1, x2, y2, x3, y3) {
    return perimeter;
 }
 
-
+//function to find area of triangle
 function triangleArea(x1, y1, x2, y2, x3, y3) {
    let one = x1 * (y2 - y3)
    let two = x2 * (y3 - y1)
@@ -20,6 +20,7 @@ function triangleArea(x1, y1, x2, y2, x3, y3) {
 
 }
 
+//testing the functions
 console.log("Testing trianglePerimeter()...");
 let perimeter = trianglePerimeter(1, 0, 2, 4, 4, 3);
 console.log("Perimeter = " + perimeter);
