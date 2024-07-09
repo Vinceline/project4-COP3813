@@ -1,5 +1,6 @@
 function isStrongPassword(password) {
-
+   //regular expression that requires at least one number, uppercase letter, special character
+   //must be at least 8 characters long and can't include "password"
    var regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\[\]{};':"\\|,.<>\/?~-])(?!.*password)(?!.*(.)\1{3,}).{8,}$/;
 
     if (password.match(regex))
@@ -11,7 +12,7 @@ function isStrongPassword(password) {
     return false;
 }
 
-
+//test functions
 console.log("Testing isStrongPassword()...");
 
 console.log("Qwerty - " + isStrongPassword("Qwerty"));                   // false - Too short, no number, no special character
